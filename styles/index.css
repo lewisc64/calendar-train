@@ -1,0 +1,77 @@
+:root {
+  --background-color: #5D646D;
+  --timetable-background: #222222;
+  --timetable-text-color: white;
+  --timetable-train-text-color: #FFC966;
+  --timetable-train-background-color: #68583C;
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+.board {
+  display: inline-block;
+  font-family: "Lucida Console", Monaco, monospace;
+  padding: 1vw;
+  border-radius: 0.2vw;
+  background-color: var(--timetable-background);
+  color: var(--timetable-text-color);
+  font-size: 1vw;
+  margin: 0.5vw;
+}
+
+#timetable {
+  width: 45vw;
+  display: grid;
+  grid-row-gap: 0.5vw;
+  grid-template-columns: 5vw 18vw 15vw 7vw;
+  user-select: none;
+}
+
+#timetable > p {
+  padding: 0.05vw;
+  margin: 0;
+  text-align: left;
+}
+
+#timetable > p.train {
+  font-size: 0.9vw;
+  overflow: hidden;
+  background-color: var(--timetable-train-background-color);
+  color: var(--timetable-train-text-color);
+  cursor: pointer;
+}
+
+#announcements {
+  width: 20vw;
+}
+
+#announcements > p {
+  margin: 0;
+}
+
+#announcements > p.footer {
+  margin-top: 1vw;
+}
+
+#announcements > #description {
+  font-size: 0.75vw;
+  white-space: pre-line;
+  background-color: var(--timetable-train-background-color);
+  color: var(--timetable-train-text-color);
+  min-height: 10vw;
+  padding: 0.1vw;
+}
+
+#time {
+  float: left;
+}
+
+#time > #timedisplay {
+  font-size: 3vw;
+  background-color: var(--timetable-train-background-color);
+  color: var(--timetable-train-text-color);
+  margin: 0;
+  padding: 1vw;
+}
