@@ -1,6 +1,6 @@
 # Calendar Train
 
-http://lewisc64.github.io/calendar-train
+http://lewisc64.github.io/calendar-train/
 
 Weird train style readout for basic iCal events.
 
