@@ -13,30 +13,30 @@ body {
 .board {
   display: inline-block;
   font-family: "Lucida Console", Monaco, monospace;
-  padding: 1vw;
-  border-radius: 0.2vw;
+  padding: 1rem;
+  border-radius: 0.2rem;
   background-color: var(--timetable-background);
   color: var(--timetable-text-color);
-  font-size: 1vw;
-  margin: 0.5vw;
+  font-size: 1rem;
+  margin: 0.5rem;
 }
 
 #timetable {
-  width: 45vw;
+  width: 72rem;
   display: grid;
-  grid-row-gap: 0.5vw;
-  grid-template-columns: 5vw 18vw 15vw 7vw;
+  grid-row-gap: 0.5rem;
+  grid-template-columns: 5rem 28rem 27rem 12rem;
   user-select: none;
 }
 
 #timetable > p {
-  padding: 0.05vw;
+  padding: 0.1rem;
   margin: 0;
   text-align: left;
 }
 
 #timetable > p.train {
-  font-size: 0.9vw;
+  font-size: 1.2rem;
   overflow: hidden;
   background-color: var(--timetable-train-background-color);
   color: var(--timetable-train-text-color);
@@ -44,7 +44,7 @@ body {
 }
 
 #announcements {
-  width: 20vw;
+  width: 40rem;
 }
 
 #announcements > p {
@@ -52,15 +52,15 @@ body {
 }
 
 #announcements > p.footer {
-  margin-top: 1vw;
+  margin-top: 1rem;
 }
 
 #announcements > #description {
-  font-size: 0.75vw;
+  font-size: 1rem;
   white-space: pre-line;
   background-color: var(--timetable-train-background-color);
   color: var(--timetable-train-text-color);
-  min-height: 10vw;
+  min-height: 15rem;
   padding: 0.1vw;
 }
 
@@ -69,9 +69,9 @@ body {
 }
 
 #time > #timedisplay {
-  font-size: 3vw;
+  font-size: 5rem;
   background-color: var(--timetable-train-background-color);
   color: var(--timetable-train-text-color);
   margin: 0;
-  padding: 1vw;
+  padding: 1rem;
 }
